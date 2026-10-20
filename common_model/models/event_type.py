@@ -1,0 +1,37 @@
+from enum import Enum
+
+
+class EventType(Enum):
+
+    # Production Events
+
+
+    JOB_ARRIVAL = "JOB_ARRIVAL"
+
+    JOB_START = "JOB_START"
+
+    SETUP_STARTED = "SETUP_STARTED"
+
+    SETUP_COMPLETED = "SETUP_COMPLETED"
+
+    MACHINE_CYCLE_STARTED = "MACHINE_CYCLE_STARTED"
+
+    MACHINE_CYCLE_COMPLETED = "MACHINE_CYCLE_COMPLETED"
+
+    JOB_COMPLETED = "JOB_COMPLETED"
+
+   
+    # Worker Events
+   
+
+    WORKER_CHANGED = "WORKER_CHANGED"
+
+   
+    # Failure & Repair Events
+    
+
+    FAILURE_DETECTED = "FAILURE_DETECTED"
+
+    REPAIR_STARTED = "REPAIR_STARTED"
+
+    REPAIR_COMPLETED = "REPAIR_COMPLETED"
