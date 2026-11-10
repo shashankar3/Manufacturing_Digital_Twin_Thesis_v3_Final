@@ -180,9 +180,7 @@ Using recent observations allows the model to respond to changing behaviour with
 
 `transition_adaptation.py` supports two approaches for updating transition probabilities.
 
-The sliding-window approach estimates transition probabilities from recent transition observations. The Bayesian approach uses a Dirichlet model to estimate a posterior-mean transition matrix from the prior and observed transition counts.
-
-The implementation maintains these approaches as separate branches so that their results can be evaluated independently.
+The sliding-window approach estimates transition probabilities from recent transition observations. 
 
 The transition-adaptation methods update state-transition probabilities, whereas behavioural adaptation updates timing and duration estimates.
 
